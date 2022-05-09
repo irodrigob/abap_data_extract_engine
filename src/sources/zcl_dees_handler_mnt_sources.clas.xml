@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZCL_DEES_HANDLER_MNT_SOURCES</CLSNAME>
+    <LANGU>S</LANGU>
+    <DESCRIPT>DEES - Controller del programa de mto. fuente datos</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <TPOOL>
+    <item>
+     <ID>I</ID>
+     <KEY>F01</KEY>
+     <ENTRY>Nueva fuente datos</ENTRY>
+     <LENGTH>28</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>HD1</KEY>
+     <ENTRY>Adaptadores y fuente datos</ENTRY>
+     <LENGTH>58</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>T01</KEY>
+     <ENTRY>Adaptadores y fuente de datos</ENTRY>
+     <LENGTH>58</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>T02</KEY>
+     <ENTRY>Mantenimiento fuente de datos</ENTRY>
+     <LENGTH>58</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>T03</KEY>
+     <ENTRY>Nueva fuente de datos</ENTRY>
+     <LENGTH>27</LENGTH>
+    </item>
+   </TPOOL>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_DEES_HANDLER_MNT_SOURCES</CLSNAME>
+     <CMPNAME>BUILD_ADAPTER_TREE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Construcción del arbol de adaptadores</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_DEES_HANDLER_MNT_SOURCES</CLSNAME>
+     <CMPNAME>CHANGE_FCAT_ADAPTER_TREE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Catalogo de campos del arbol de adaptadores</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_DEES_HANDLER_MNT_SOURCES</CLSNAME>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>CONSTRUCTOR</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_DEES_HANDLER_MNT_SOURCES</CLSNAME>
+     <CMPNAME>FILL_ADAPTER_TREE_DATA</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Relleno del arbol de adaptadores</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_DEES_HANDLER_MNT_SOURCES</CLSNAME>
+     <CMPNAME>LOAD_INITIAL_CONF</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Carga de configuración inicial</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_DEES_HANDLER_MNT_SOURCES</CLSNAME>
+     <CMPNAME>LOAD_MAIN_DATA</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Inicio del proceso</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_DEES_HANDLER_MNT_SOURCES</CLSNAME>
+     <CMPNAME>ON_LINK_ADAPTER_TREE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Evento al pulsar un nodo de tipo enlace en el arbol de adapt</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_DEES_HANDLER_MNT_SOURCES</CLSNAME>
+     <CMPNAME>ON_UCOMM_ADAPTER_TREE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Evento de función pulsada en el arbol de adaptadores</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_DEES_HANDLER_MNT_SOURCES</CLSNAME>
+     <CMPNAME>PBO_9000</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>PBO dynpro 9000</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_DEES_HANDLER_MNT_SOURCES</CLSNAME>
+     <CMPNAME>PBO_9001</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>PBO dynpro 9001</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_DEES_HANDLER_MNT_SOURCES</CLSNAME>
+     <CMPNAME>READ_ADAPTERS</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Lectura de adaptadores</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_DEES_HANDLER_MNT_SOURCES</CLSNAME>
+     <CMPNAME>READ_DATA_SOURCE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Lectura de la fuente de datos</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_DEES_HANDLER_MNT_SOURCES</CLSNAME>
+     <CMPNAME>SET_EVENT_ADAPTER_TREE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Establece los eventos del arbol de adaptadores</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_DEES_HANDLER_MNT_SOURCES</CLSNAME>
+     <CMPNAME>SET_FUNCTION_ADAPTER_TREE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Funciones del arbol de adaptadores</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

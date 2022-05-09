@@ -1,0 +1,15 @@
+CLASS zcl_deea_adapters_view DEFINITION
+  PUBLIC
+  INHERITING FROM zcl_deea_adapters_base
+  FINAL
+  CREATE PUBLIC .
+
+  PUBLIC SECTION.
+  PROTECTED SECTION.
+  PRIVATE SECTION.
+ENDCLASS.
+
+
+
+CLASS zcl_deea_adapters_view IMPLEMENTATION.
+ENDCLASS.
