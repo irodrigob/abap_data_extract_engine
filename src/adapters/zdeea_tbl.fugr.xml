@@ -6,8 +6,8 @@
    <INCLUDES>
     <SOBJ_NAME>LZDEEA_TBLF00</SOBJ_NAME>
     <SOBJ_NAME>LZDEEA_TBLI00</SOBJ_NAME>
-    <SOBJ_NAME>LZDEEA_TBLTOP</SOBJ_NAME>
     <SOBJ_NAME>LZDEEA_TBLT00</SOBJ_NAME>
+    <SOBJ_NAME>LZDEEA_TBLTOP</SOBJ_NAME>
     <SOBJ_NAME>SAPLZDEEA_TBL</SOBJ_NAME>
    </INCLUDES>
    <FUNCTIONS>
@@ -376,7 +376,6 @@
        <CONT_NAME>TCTRL_ZDEEA_T001</CONT_NAME>
        <TYPE>TEXT</TYPE>
        <NAME>*ZDEEA_T001-ADAPTER</NAME>
-       <TEXT>Tipo_adaptador__________________________</TEXT>
        <LINE>001</LINE>
        <COLUMN>001</COLUMN>
        <LENGTH>040</LENGTH>
@@ -393,7 +392,6 @@
        <CONT_NAME>TCTRL_ZDEEA_T001</CONT_NAME>
        <TYPE>TEXT</TYPE>
        <NAME>*ZDEEA_T001-DESCRIPTION</NAME>
-       <TEXT>Descripción_tipo_adaptador______________</TEXT>
        <LINE>001</LINE>
        <COLUMN>002</COLUMN>
        <LENGTH>040</LENGTH>
@@ -410,7 +408,6 @@
        <CONT_NAME>TCTRL_ZDEEA_T001</CONT_NAME>
        <TYPE>TEXT</TYPE>
        <NAME>*ZDEEA_T001-CLASSNAME</NAME>
-       <TEXT>Clase/Interface_________________________</TEXT>
        <LINE>001</LINE>
        <COLUMN>003</COLUMN>
        <LENGTH>040</LENGTH>

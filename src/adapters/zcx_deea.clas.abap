@@ -13,7 +13,7 @@ public section.
     begin of EXTRACTOR_TYPE_NOT_DEFINED,
       msgid type symsgid value 'ZDEEA',
       msgno type symsgno value '001',
-      attr1 type scx_attrname value 'MV_MSG1',
+      attr1 type scx_attrname value 'MV_MSGV1',
       attr2 type scx_attrname value '',
       attr3 type scx_attrname value '',
       attr4 type scx_attrname value '',
@@ -22,24 +22,24 @@ public section.
     begin of INSTANCE_CLASS_ERROR,
       msgid type symsgid value 'ZDEEA',
       msgno type symsgno value '002',
-      attr1 type scx_attrname value 'MV_MSG1',
-      attr2 type scx_attrname value 'MV_MSG2',
+      attr1 type scx_attrname value 'MV_MSGV1',
+      attr2 type scx_attrname value 'MV_MSGV2',
       attr3 type scx_attrname value '',
       attr4 type scx_attrname value '',
     end of INSTANCE_CLASS_ERROR .
-  data MV_MSG1 type STRING .
-  data MV_MSG2 type STRING .
-  data MV_MSG3 type STRING .
-  data MV_MSG4 type STRING .
+  data MV_MSGV1 type STRING .
+  data MV_MSGV2 type STRING .
+  data MV_MSGV3 type STRING .
+  data MV_MSGV4 type STRING .
 
   methods CONSTRUCTOR
     importing
       !TEXTID like IF_T100_MESSAGE=>T100KEY optional
       !PREVIOUS like PREVIOUS optional
-      !MV_MSG1 type STRING optional
-      !MV_MSG2 type STRING optional
-      !MV_MSG3 type STRING optional
-      !MV_MSG4 type STRING optional .
+      !MV_MSGV1 type STRING optional
+      !MV_MSGV2 type STRING optional
+      !MV_MSGV3 type STRING optional
+      !MV_MSGV4 type STRING optional .
 protected section.
 private section.
 ENDCLASS.
@@ -54,10 +54,10 @@ CALL METHOD SUPER->CONSTRUCTOR
 EXPORTING
 PREVIOUS = PREVIOUS
 .
-me->MV_MSG1 = MV_MSG1 .
-me->MV_MSG2 = MV_MSG2 .
-me->MV_MSG3 = MV_MSG3 .
-me->MV_MSG4 = MV_MSG4 .
+me->MV_MSGV1 = MV_MSGV1 .
+me->MV_MSGV2 = MV_MSGV2 .
+me->MV_MSGV3 = MV_MSGV3 .
+me->MV_MSGV4 = MV_MSGV4 .
 clear me->textid.
 if textid is initial.
   IF_T100_MESSAGE~T100KEY = IF_T100_MESSAGE=>DEFAULT_TEXTID.

@@ -1,7 +1,5 @@
 *---------------------------------------------------------------------*
 *    view related data declarations
-*   generation date: 04.05.2022 at 11:19:35
-*   view maintenance generator version: #001407#
 *---------------------------------------------------------------------*
 *...processing: ZDEEA_T001......................................*
 DATA:  BEGIN OF STATUS_ZDEEA_T001                    .   "state vector

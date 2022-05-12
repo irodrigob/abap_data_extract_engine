@@ -29,9 +29,11 @@ CLASS zcl_deea_adapters_base DEFINITION
     "! @parameter rt_list | <p class="shorttext synchronized">Listado</p>
     CLASS-METHODS get_types_list_static
       RETURNING VALUE(rt_list) TYPE tt_types_list.
+
   PROTECTED SECTION.
     DATA mv_langu TYPE sylangu.
     DATA mv_adapter TYPE zdeea_e_adapter_name.
+    DATA ms_configurarion TYPE zif_deea_adapters=>ts_configuration.
   PRIVATE SECTION.
 ENDCLASS.
 
@@ -65,15 +67,15 @@ CLASS zcl_deea_adapters_base IMPLEMENTATION.
           RAISE EXCEPTION TYPE zcx_deea
             EXPORTING
               textid  = zcx_deea=>instance_class_error
-              mv_msg1 = CONV #( lv_class )
-              mv_msg2 = CONV #( iv_adapter ).
+              mv_msgv1 = CONV #( lv_class )
+              mv_msgv2 = CONV #( iv_adapter ).
       ENDTRY.
 
     ELSE.
       RAISE EXCEPTION TYPE zcx_deea
         EXPORTING
           textid  = zcx_deea=>extractor_type_not_defined
-          mv_msg1 = CONV #( iv_adapter ).
+          mv_msgv1 = CONV #( iv_adapter ).
     ENDIF.
 
   ENDMETHOD.
@@ -83,5 +85,8 @@ CLASS zcl_deea_adapters_base IMPLEMENTATION.
     CLEAR: rt_list.
     SELECT adapter description INTO TABLE rt_list
            FROM zdeea_t001.
+  ENDMETHOD.
+  METHOD zif_deea_adapters~set_configuration.
+    ms_configurarion = is_configuration.
   ENDMETHOD.
 ENDCLASS.

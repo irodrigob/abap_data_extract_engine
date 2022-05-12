@@ -16,6 +16,7 @@
      <ADMINFIELD>0</ADMINFIELD>
      <PRECFIELD>/BOBF/S_FRW_KEY_INCL</PRECFIELD>
      <MASK>      S</MASK>
+     <DDTEXT>Include Structure for Key Information</DDTEXT>
      <COMPTYPE>S</COMPTYPE>
     </DD03P>
     <DD03P>

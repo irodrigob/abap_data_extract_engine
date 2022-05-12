@@ -26,6 +26,42 @@
      <MSGNR>002</MSGNR>
      <TEXT>Error al instanciar la clase &amp; del tipo &amp;</TEXT>
     </T100>
+    <T100>
+     <SPRSL>S</SPRSL>
+     <ARBGB>ZDEEA</ARBGB>
+     <MSGNR>003</MSGNR>
+     <TEXT>Programa &amp; con variante &amp; ejecutado correctamente</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>S</SPRSL>
+     <ARBGB>ZDEEA</ARBGB>
+     <MSGNR>004</MSGNR>
+     <TEXT>Programa &amp; ejecutado correctamente</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>S</SPRSL>
+     <ARBGB>ZDEEA</ARBGB>
+     <MSGNR>005</MSGNR>
+     <TEXT>Error al ejecutar el programa &amp; con la variante &amp;</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>S</SPRSL>
+     <ARBGB>ZDEEA</ARBGB>
+     <MSGNR>006</MSGNR>
+     <TEXT>Error al ejecutar el programa &amp;</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>S</SPRSL>
+     <ARBGB>ZDEEA</ARBGB>
+     <MSGNR>007</MSGNR>
+     <TEXT>Programa &amp; con variante &amp; no lanzado en modo test</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>S</SPRSL>
+     <ARBGB>ZDEEA</ARBGB>
+     <MSGNR>008</MSGNR>
+     <TEXT>Programa &amp; no lanzado en modo test</TEXT>
+    </T100>
    </T100>
   </asx:values>
  </asx:abap>

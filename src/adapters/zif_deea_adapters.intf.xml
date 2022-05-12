@@ -5,11 +5,25 @@
    <VSEOINTERF>
     <CLSNAME>ZIF_DEEA_ADAPTERS</CLSNAME>
     <LANGU>S</LANGU>
-    <DESCRIPT>DEET - Tipos de extractores</DESCRIPT>
+    <DESCRIPT>DEET - Tipos de adaptadores</DESCRIPT>
     <EXPOSURE>2</EXPOSURE>
     <STATE>1</STATE>
     <UNICODE>X</UNICODE>
    </VSEOINTERF>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>ZIF_DEEA_ADAPTERS</CLSNAME>
+     <CMPNAME>EXECUTE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Ejecuta el paso del proceso</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZIF_DEEA_ADAPTERS</CLSNAME>
+     <CMPNAME>SET_CONFIGURATION</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Establece la configuración del adaptador</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
   </asx:values>
  </asx:abap>
 </abapGit>

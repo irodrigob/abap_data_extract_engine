@@ -21,7 +21,6 @@
       <NEXTSCREEN>9000</NEXTSCREEN>
       <LINES>040</LINES>
       <COLUMNS>191</COLUMNS>
-      <FIORIENLARGEOFF>X</FIORIENLARGEOFF>
      </HEADER>
      <CONTAINERS>
       <RPY_DYCATT>
@@ -121,7 +120,6 @@
        <CONT_NAME>SCREEN</CONT_NAME>
        <TYPE>TEXT</TYPE>
        <NAME>ZDEES_BO_SC_HEADER-DATA_SOURCE</NAME>
-       <TEXT>Fuente_datos________</TEXT>
        <LINE>002</LINE>
        <COLUMN>002</COLUMN>
        <LENGTH>020</LENGTH>
@@ -138,7 +136,6 @@
        <CONT_NAME>SCREEN</CONT_NAME>
        <TYPE>TEMPLATE</TYPE>
        <NAME>ZDEES_BO_SC_HEADER-DATA_SOURCE</NAME>
-       <TEXT>______________________________</TEXT>
        <LINE>002</LINE>
        <COLUMN>023</COLUMN>
        <LENGTH>030</LENGTH>
@@ -157,7 +154,6 @@
        <CONT_NAME>SCREEN</CONT_NAME>
        <TYPE>TEXT</TYPE>
        <NAME>ZDEES_BO_SC_HEADER-DESCRIPTION</NAME>
-       <TEXT>Descrip._Fuente_dato</TEXT>
        <LINE>003</LINE>
        <COLUMN>002</COLUMN>
        <LENGTH>020</LENGTH>
@@ -166,7 +162,6 @@
        <FORMAT>CHAR</FORMAT>
        <FROM_DICT>X</FROM_DICT>
        <MODIFIC>2</MODIFIC>
-       <UP_LOWER>X</UP_LOWER>
        <REQU_ENTRY>N</REQU_ENTRY>
        <LABELLEFT>X</LABELLEFT>
       </RPY_DYFATC>
@@ -175,7 +170,6 @@
        <CONT_NAME>SCREEN</CONT_NAME>
        <TYPE>TEMPLATE</TYPE>
        <NAME>ZDEES_BO_SC_HEADER-DESCRIPTION</NAME>
-       <TEXT>____________________________________________________________</TEXT>
        <LINE>003</LINE>
        <COLUMN>023</COLUMN>
        <LENGTH>060</LENGTH>
@@ -194,7 +188,6 @@
        <CONT_NAME>SCREEN</CONT_NAME>
        <TYPE>TEXT</TYPE>
        <NAME>ZDEES_BO_SC_HEADER-ADAPTER</NAME>
-       <TEXT>Tipo_adaptador______</TEXT>
        <LINE>004</LINE>
        <COLUMN>002</COLUMN>
        <LENGTH>020</LENGTH>
@@ -213,7 +206,6 @@
        <CONT_NAME>SCREEN</CONT_NAME>
        <TYPE>TEMPLATE</TYPE>
        <NAME>ZDEES_BO_SC_HEADER-ADAPTER</NAME>
-       <TEXT>____________________</TEXT>
        <LINE>004</LINE>
        <COLUMN>023</COLUMN>
        <LENGTH>020</LENGTH>
