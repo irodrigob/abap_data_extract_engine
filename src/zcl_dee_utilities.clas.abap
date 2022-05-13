@@ -18,7 +18,7 @@ CLASS zcl_dee_utilities DEFINITION
     "! @parameter rs_return | <p class="shorttext synchronized">Retorno</p>
     CLASS-METHODS fill_return
       IMPORTING
-        !iv_type         TYPE any default zif_dee_data=>cs_messages-id_general
+        !iv_type         TYPE any DEFAULT zif_dee_data=>cs_messages-id_general
         !iv_id           TYPE any
         !iv_number       TYPE any
         !iv_message_v1   TYPE any OPTIONAL
@@ -30,6 +30,10 @@ CLASS zcl_dee_utilities DEFINITION
         !iv_row          TYPE any OPTIONAL
       RETURNING
         VALUE(rs_return) TYPE bapiret2 .
+    "! <p class="shorttext synchronized">Se llama desde el motor de extracción datos</p>
+    "! @parameter rv_is | <p class="shorttext synchronized">Se llama</p>
+    CLASS-METHODS call_from_dee
+      RETURNING VALUE(rv_is) TYPE sap_bool.
   PROTECTED SECTION.
   PRIVATE SECTION.
 ENDCLASS.
@@ -61,6 +65,30 @@ CLASS zcl_dee_utilities IMPLEMENTATION.
         message_v4 = rs_return-message_v4
       IMPORTING
         message    = rs_return-message.
+  ENDMETHOD.
+
+  METHOD call_from_dee.
+    DATA lt_callstack TYPE abap_callstack.
+    DATA lt_r_block TYPE RANGE OF string.
+
+    CALL FUNCTION 'SYSTEM_CALLSTACK'
+      IMPORTING
+        callstack = lt_callstack.
+
+    lt_r_block = VALUE #( ( sign = 'I' option = 'CP' low = 'ZCL_DEEC_CHAIN_PROCESS*' )
+                          ( sign = 'I' option = 'CP' low = 'ZCL_DEEC_CHAIN_PROCESS_STEP*' )
+                          ( sign = 'I' option = 'CP' low = 'ZCL_DEEA_ADAPTERS_*' ) ).
+
+    LOOP AT lt_callstack TRANSPORTING NO FIELDS
+                            WHERE blocktype = 'METHOD'
+                                  AND mainprogram IN lt_r_block.
+      EXIT.
+    ENDLOOP.
+    IF sy-subrc = 0.
+      rv_is = abap_true.
+    ENDIF.
+
+
   ENDMETHOD.
 
 ENDCLASS.
